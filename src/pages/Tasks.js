@@ -60,9 +60,14 @@ const Tasks = () => {
         navigate(`/editTask/${taskId}`);
     };
 
-    const filteredTasks = tasks.filter(task =>
-        task.TaskName.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    
+    let filteredTasks = null;
+
+    if (tasks && tasks.length > 0) {
+        filteredTasks = tasks.filter(task =>
+            task.TaskName.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+    }
 
     return (
         <div className="tasks-container">
@@ -91,7 +96,7 @@ const Tasks = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {filteredTasks.map((task, index) => (
+                    {filteredTasks && filteredTasks.map((task, index) => (
                         <tr key={index}>
                             <td>{task.TaskID}</td>
                             <td>{task.TaskName}</td>
