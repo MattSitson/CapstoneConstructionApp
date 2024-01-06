@@ -20,7 +20,7 @@ const Home = () => {
             }
         });
 
-        Axios.get('https://mysql-capstone-509eaa3bcdeb.herokuapp.com/mytasks', { withCredentials: true })
+        Axios.get('https://mysql-capstone-509eaa3bcdeb.herokuapp.com/mytasks')
             .then(response => {
                 setTasks(response.data);
             })
