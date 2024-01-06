@@ -1,0 +1,83 @@
+.manage-users-container {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    color: #333;
+}
+
+.manage-users-title {
+    color: #26A69A;
+}
+
+.manage-users-search-create-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.manage-users-search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.manage-users-button {
+    background-color: #26A69A;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.manage-users-edit{
+    background-color: #FFC107;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.manage-users-delete{
+    background-color: #F44336;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.manage-users-button:hover {
+    background-color: #23897a;
+}
+
+.manage-users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.manage-users-table thead {
+    background-color: #26A69A;
+    color: black;
+}
+
+.manage-users-table th, .manage-users-table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.manage-users-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.manage-users-table-action-buttons {
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,64 @@
+.edit-announcement-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.edit-announcement-container h1 {
+    color: #26A69A;
+    text-align: center;
+}
+
+.edit-announcement-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-announcement-container input,
+.edit-announcement-container textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.edit-announcement-container textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.edit-announcement-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #26A69A;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-announcement-container button:hover {
+    background-color: #00796B;
+}
+
+.back-button {
+    background-color: #BDBDBD;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button:hover {
+    background-color: #9E9E9E;
+}

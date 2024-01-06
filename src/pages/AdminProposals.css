@@ -1,0 +1,79 @@
+.admin-proposals-container {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
+}
+
+.admin-proposals-container h1 {
+    text-align: center;
+    color: #26A69A;
+    margin-bottom: 1.5rem;
+}
+
+.admin-proposals-container input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.admin-proposals-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.admin-proposals-container th, .admin-proposals-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.admin-proposals-container th {
+    background-color: #26A69A;
+    color: white;
+}
+
+.admin-proposals-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.admin-proposals-container tr:hover {
+    background-color: #ddd;
+}
+
+.admin-proposals-container .approve-button, .admin-proposals-container .deny-button {
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border: none;
+    margin-right: 5px;
+}
+
+.admin-proposals-container .approve-button {
+    background-color: #4CAF50; /* Green for approve */
+    color: white;
+}
+
+.admin-proposals-container .deny-button {
+    background-color: #F44336; /* Red for deny */
+    color: white;
+}
+
+.admin-proposals-container .approve-button:hover,
+.admin-proposals-container .deny-button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .admin-proposals-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}

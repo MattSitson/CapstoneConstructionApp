@@ -1,0 +1,32 @@
+.statistics-container {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.statistics-container h1 {
+    color: #26A69A;
+    margin-bottom: 1.5rem;
+}
+
+.statistics-container p {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.statistics-container p span {
+    font-weight: bold;
+    color: #26A69A;
+}
+
+@media (max-width: 768px) {
+    .statistics-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}

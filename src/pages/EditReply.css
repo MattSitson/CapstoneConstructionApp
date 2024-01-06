@@ -1,0 +1,51 @@
+.edit-reply-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-reply-container h1 {
+    color: #26A69A;
+    text-align: center;
+}
+
+.edit-reply-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-reply-container textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 150px;
+    resize: vertical;
+}
+
+.edit-reply-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #26A69A;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-reply-container .back-button {
+    background-color: #00796B; /* Changed to a darker shade */
+    color: white;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-top: 5em;
+}
+
+.edit-reply-container .back-button:hover {
+    background-color: #004D40; /* Even darker shade for hover */
+}
