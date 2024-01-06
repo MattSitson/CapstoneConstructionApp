@@ -63,10 +63,12 @@ const Tasks = () => {
     
     let filteredTasks = null;
 
-    if (tasks && tasks.length > 0) {
+    if (tasks && Array.isArray(tasks) && tasks.length > 0) {
         filteredTasks = tasks.filter(task =>
             task.TaskName.toLowerCase().includes(searchTerm.toLowerCase())
         );
+    } else {
+        filteredTasks = [];
     }
 
     return (
