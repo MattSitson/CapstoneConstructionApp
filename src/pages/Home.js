@@ -12,8 +12,9 @@ const Home = () => {
 
   useEffect(() => {
     Axios.get('https://mysql-capstone-509eaa3bcdeb.herokuapp.com/login').then((response)=> {
-      if(response.data.loggedIn === false){
-          navigate('/');
+      console.log(response); if(response.data.loggedIn === false){
+          //navigate('/');
+          
       }
       });
 

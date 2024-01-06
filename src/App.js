@@ -36,7 +36,7 @@ function App() {
 const RoutesWithNavbar = () => {
   const location = useLocation();
   const showNavBar = location.pathname !== '/';
-
+  
   return (
     <>
       {showNavBar && <Navbar />}
